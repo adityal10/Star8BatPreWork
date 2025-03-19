@@ -11,7 +11,7 @@ def main():
     video_path = 'video_clips/pull2.mp4'
     video_frames = read_video(video_path) # output format (720, 1280, 3) = ( height, width, BGR (color) )
 
-    model_path = 'models/yolo11n-seg.pt' # model path
+    model_path = 'yolo11n-seg.pt' # model path
 
     ## GET AND STORE PLAYER POSE DETECTIONS
     model = PlayerPose(model_path=model_path)
